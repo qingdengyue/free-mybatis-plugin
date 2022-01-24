@@ -42,6 +42,12 @@ intellij {
 }
 patchPluginXml {
     changeNotes = """
+    <h4>2022.01.24</h4>
+        <ul>
+            <li>1.来源于 https://gitee.com/wuzhizhan/free-mybatis-plugin-introduction  非常感谢原作者的辛苦付出。</li>
+            <li>2.增加新版本兼容逻辑</li>
+            <li>3.重新命名，避免与原有插件冲突</li>
+        </ul>
     <h4>2020.12.09</h4>
         <ul>
             <li>修改过期的方法</li>
