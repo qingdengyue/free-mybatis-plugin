@@ -7,6 +7,7 @@ import com.intellij.openapi.editor.markup.GutterIconRenderer;
 import com.intellij.pom.Navigatable;
 import com.intellij.psi.PsiElement;
 import com.intellij.util.Function;
+import org.jetbrains.annotations.Nls;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -15,6 +16,7 @@ import java.awt.event.MouseEvent;
 import java.util.Collection;
 import java.util.List;
 import java.util.Optional;
+import java.util.function.Supplier;
 
 /**
  * @author yanglin
@@ -33,13 +35,13 @@ public abstract class SimpleLineMarkerProvider<F extends PsiElement, T> extends 
 
         Optional<T> processResult = apply((F) element);
         return processResult.isPresent() ? new LineMarkerInfo<F>(
-                (F) element,
+                (F)element,
                 element.getTextRange(),
                 getIcon(),
-                Pass.UPDATE_ALL,
                 getTooltipProvider(processResult.get()),
                 getNavigationHandler(processResult.get()),
-                GutterIconRenderer.Alignment.CENTER
+                GutterIconRenderer.Alignment.CENTER,
+                getAccessibleNameProvider(processResult.get())
         ) : null;
     }
 
@@ -52,6 +54,7 @@ public abstract class SimpleLineMarkerProvider<F extends PsiElement, T> extends 
         };
     }
 
+
     private GutterIconNavigationHandler<F> getNavigationHandler(final T target) {
         return new GutterIconNavigationHandler<F>() {
             @Override
@@ -60,6 +63,19 @@ public abstract class SimpleLineMarkerProvider<F extends PsiElement, T> extends 
             }
         };
     }
+
+
+    private Supplier<@Nls @NotNull String> getAccessibleNameProvider(final T target){
+        return new Supplier<String>() {
+            @Override
+            public String get() {
+                return "MybatisX";
+            }
+        };
+    }
+
+
+
 
     public abstract boolean isTheElement(@NotNull PsiElement element);
 

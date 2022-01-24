@@ -22,4 +22,8 @@ public class MapperDescription extends DomFileDescription<Mapper> {
         return DomUtils.isMybatisFile(file);
     }
 
+    @Override
+    public boolean acceptsOtherRootTagNames() {
+        return true;
+    }
 }

@@ -22,4 +22,8 @@ public class ConfigurationDescription extends DomFileDescription<Configuration> 
         return DomUtils.isMybatisConfigurationFile(file);
     }
 
+    @Override
+    public boolean acceptsOtherRootTagNames() {
+        return true;
+    }
 }
