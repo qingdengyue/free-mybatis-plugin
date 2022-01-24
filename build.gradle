@@ -15,7 +15,7 @@ plugins {
 }
 
 group = 'cn.wuzhizhan.idea.mybatis'
-version = '2022.01.24'
+version = 'IU-221.001'
 
 apply plugin: 'java-library'
 sourceCompatibility = 1.8
