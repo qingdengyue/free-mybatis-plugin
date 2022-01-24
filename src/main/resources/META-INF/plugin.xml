@@ -33,9 +33,9 @@
         </action>
     </actions>
     <extensions defaultExtensionNs="com.intellij">
-        <dom.fileDescription implementation="com.wuzhizhan.mybatis.dom.description.MapperDescription"/>
-        <dom.fileDescription implementation="com.wuzhizhan.mybatis.dom.description.ConfigurationDescription"/>
-        <definitionsSearch implementation="com.wuzhizhan.mybatis.definitionsearch.MapperDefinitionSearch"/>
+        <dom.fileMetaData implementation="com.wuzhizhan.mybatis.dom.description.MapperDescription"/>
+        <dom.fileMetaData implementation="com.wuzhizhan.mybatis.dom.description.ConfigurationDescription"/>
+        <definitionsScopedSearch implementation="com.wuzhizhan.mybatis.definitionsearch.MapperDefinitionSearch"/>
         <projectService serviceImplementation="com.wuzhizhan.mybatis.service.JavaService"/>
         <projectService serviceImplementation="com.wuzhizhan.mybatis.service.AnnotationService"/>
         <projectService serviceImplementation="com.wuzhizhan.mybatis.service.EditorService"/>
