@@ -1,7 +1,7 @@
 <idea-plugin>
     <id>cn.wuzhizhan.plugin.mybatis.cloud</id>
     <name>FreeMyBatisPluginCloud</name>
-    <vendor email="wuzhizhan@wuzhizhan.cn" url="https://github.com/wuzhizhan">wuzhizhan</vendor>
+    <vendor email="zrl412@163.com" url="https://github.com/qingdengyue/free-mybatis-plugin.git">QingDeng</vendor>
 
     <description><![CDATA[
     Free Mybatis Plugin Cloud <br/>
