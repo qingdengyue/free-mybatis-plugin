@@ -7,6 +7,7 @@
     Free Mybatis Plugin Cloud <br/>
     A idea plugin for mybatis <br/>
     free-mybatis-plugin-cloud is an enchange plugin for idea to supoort mybatis,here is the main functions:</br>
+    <p>来源于 https://gitee.com/wuzhizhan/free-mybatis-plugin-introduction  非常感谢原作者的辛苦付出</p>
     <ul>
         <li>generate mapper xml files</li>
         <li>navigate from the code to mapper and from the mapper back to code</li>
